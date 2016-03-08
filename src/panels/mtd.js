@@ -30,14 +30,20 @@ var MTDPanel = React.createClass({
         setInterval(this.updateDepartures, 60000);
     },
 
+    getMinsText: function(mins) {
+        if (mins === 0) {
+            return 'due';
+        }
+        return mins + ' min' + (mins !== 1 ? 's' : '');
+    },
+
     render: function() {
         var items = this.state.departures.map(function(departure) {
             var mins = departure.expected_mins;
-            var minsText = mins + ' min' + (mins !== 1 ? 's' : '');
             return <li key={departure.trip.trip_id}>
-                {minsText} - {departure.headsign}
+                {this.getMinsText(mins)} - {departure.headsign}
             </li>;
-        });
+        }.bind(this));
 
         return <div className="panel">
             <div className="panel-heading">
