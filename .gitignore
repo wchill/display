@@ -41,3 +41,6 @@ main.css
 
 # Secrets file
 src/secrets.js
+
+# Vim swap file
+.*.swp
