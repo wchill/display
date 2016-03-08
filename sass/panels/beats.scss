@@ -1,0 +1,20 @@
+.beats-panel {
+    width: 500px;
+}
+
+.beats-panel-body {
+    display: flex;
+    align-items: center;
+
+    img {
+        max-height: 150px;
+    }
+
+    .beats-text {
+        margin-left: 15px;
+    }
+
+    .beats-title {
+        font-size: 1.5em;
+    }
+}

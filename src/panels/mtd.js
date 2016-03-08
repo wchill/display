@@ -39,12 +39,16 @@ var MTDPanel = React.createClass({
             </li>;
         });
 
-        return <div>
-            <h2>MTD Bus Times</h2>
-            <p>Goodwin &amp; Main</p>
-            <ul>
-                {items}
-            </ul>
+        return <div className="panel">
+            <div className="panel-heading">
+                <h2>MTD Bus Times</h2>
+            </div>
+            <div className="panel-body">
+                <p>Goodwin &amp; Main</p>
+                <ul>
+                    {items}
+                </ul>
+            </div>
         </div>;
     }
 });

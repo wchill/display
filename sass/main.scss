@@ -1,4 +1,6 @@
 @import 'header';
+@import 'panels/slides';
+@import 'panels/beats';
 
 body {
     margin: 0px;
@@ -10,7 +12,39 @@ body {
     height: 1080px;
 }
 
-.body-container {
+.row {
     margin: 25px;
     display: flex;
+    justify-content: space-between;
+}
+
+.row-primary {
+    height: 540px;
+}
+
+.row-secondary {
+    height: 265px;
+}
+
+.panel {
+    border: 1px solid #385461;
+    display: flex;
+    flex-direction: column;
+
+    .panel-heading {
+        padding: 10px;
+        background: linear-gradient(#2f86ae, #385461);
+        color: white;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1.25em;
+        }
+    }
+
+    .panel-body {
+        padding: 10px;
+        flex-grow: 1;
+    }
 }

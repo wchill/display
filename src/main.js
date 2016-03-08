@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 var Header = require('./header');
+var SlidesPanel = require('./panels/slides');
 var BeatsPanel = require('./panels/beats');
 var MTDPanel = require('./panels/mtd');
 var MeetingTimesPanel = require('./panels/meeting-times');
@@ -14,11 +15,14 @@ var Dashboard = React.createClass({
     render: function() {
         return <div>
             <Header />
-            <div className="body-container">
-                <BeatsPanel />
-                <MTDPanel />
+            <div className="row row-primary">
+                <SlidesPanel />
                 <MeetingTimesPanel />
+            </div>
+            <div className="row row-secondary">
                 <SponsorsPanel />
+                <MTDPanel />
+                <BeatsPanel />
             </div>
         </div>;
     }

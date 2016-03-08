@@ -37,21 +37,26 @@ var BeatsPanel = React.createClass({
                 artUrl += 'static/default-album-art.jpg';
             }
 
-            body = <div>
-                <img style={{maxHeight: 200}} src={artUrl} />
-                <p>Title: {nowPlaying.media.title}</p>
-                <p>Album: {nowPlaying.media.album}</p>
-                <p>Artist: {nowPlaying.media.artist}</p>
-                <p>Time: {nowPlaying.player_status.current_time / 1000}</p>
-                <p>Duration: {nowPlaying.media.length}</p>
+            body = <div className="panel-body beats-panel-body">
+                <img src={artUrl} />
+                <div className="beats-text">
+                    <div className="beats-title">
+                        {nowPlaying.media.title}
+                    </div>
+                    <div>{nowPlaying.media.album}</div>
+                    <div>{nowPlaying.media.artist}</div>
+                    <div>Time: {nowPlaying.player_status.current_time / 1000}</div>
+                    <div>Duration: {nowPlaying.media.length}</div>
+                    <p>https://www-s.acm.illinois.edu/beats/1104/</p>
+                </div>
             </div>;
         }
 
-        return <div>
-            <h2>Beats by ACM</h2>
-            <h3>Now Playing</h3>
+        return <div className="panel beats-panel">
+            <div className="panel-heading">
+                <h2>Beats by ACM - Now Playing</h2>
+            </div>
             {body}
-            <p>https://www-s.acm.illinois.edu/beats/1104/</p>
         </div>;
     }
 });
