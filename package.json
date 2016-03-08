@@ -15,9 +15,12 @@
         "babel-preset-react": "6.5.x",
         "babelify": "7.2.x",
         "browserify": "13.0.x",
+        "gulp": "3.9.x",
+        "gulp-sass": "2.2.x",
         "jquery": "2.2.x",
         "moment": "2.12.x",
         "react": "0.14.x",
-        "react-dom": "0.14.x"
+        "react-dom": "0.14.x",
+        "vinyl-source-stream": "1.1.x"
     }
 }

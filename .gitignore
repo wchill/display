@@ -36,5 +36,8 @@ jspm_packages
 # Browserify bundle file
 bundle.js
 
+# Compiled CSS file
+main.css
+
 # Secrets file
 src/secrets.js

@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var ClockPanel = require('./panels/clock');
+var Header = require('./header');
 var BeatsPanel = require('./panels/beats');
 var MTDPanel = require('./panels/mtd');
 var MeetingTimesPanel = require('./panels/meeting-times');
@@ -13,13 +13,13 @@ var SponsorsPanel = require('./panels/sponsors');
 var Dashboard = React.createClass({
     render: function() {
         return <div>
-            <img src="img/acm-logo.png" style={{maxWidth: 150}} />
-            <h1>Association for Computing Machinery</h1>
-            <ClockPanel />
-            <BeatsPanel />
-            <MTDPanel />
-            <MeetingTimesPanel />
-            <SponsorsPanel />
+            <Header />
+            <div className="body-container">
+                <BeatsPanel />
+                <MTDPanel />
+                <MeetingTimesPanel />
+                <SponsorsPanel />
+            </div>
         </div>;
     }
 });

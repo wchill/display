@@ -1,0 +1,16 @@
+@import 'header';
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#main {
+    width: 1920px;
+    height: 1080px;
+}
+
+.body-container {
+    margin: 25px;
+    display: flex;
+}

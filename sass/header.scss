@@ -1,0 +1,41 @@
+@import 'panels/clock';
+
+.header-container {
+    width: 1920px;
+    height: 200px;
+    background: linear-gradient(#2f86ae, #385461);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.header-logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.header-text {
+    h1, h2 {
+        font-weight: normal;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+.header-right {
+    display: flex;
+}
