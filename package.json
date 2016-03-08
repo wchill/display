@@ -1,0 +1,23 @@
+{
+    "name": "display",
+    "version": "0.0.1",
+    "author": "Kevin Wang <kevin@kevinwang.com>",
+    "scripts": {
+        "build": "browserify -t [ babelify --presets [ react ] ] src/main.js -o bundle.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/acm-uiuc/display.git"
+    },
+    "main": "index.html",
+    "dependencies": {
+        "async": "1.5.x",
+        "babel-preset-react": "6.5.x",
+        "babelify": "7.2.x",
+        "browserify": "13.0.x",
+        "jquery": "2.2.x",
+        "moment": "2.12.x",
+        "react": "0.14.x",
+        "react-dom": "0.14.x"
+    }
+}
