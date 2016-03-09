@@ -12,7 +12,7 @@ var SponsorsPanel = React.createClass({
                 <img src={sponsor.logoPath} style={{maxWidth: 300}} />
             </li>
         });
-        return <div className="panel">
+        return <div className="panel panel-fill">
             <div className="panel-heading">
                 <h2>Sponsors</h2>
             </div>

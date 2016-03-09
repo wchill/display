@@ -8,13 +8,21 @@
 
     img {
         max-height: 150px;
+        max-width: 150px;
+        flex-shrink: 0;
     }
 
     .beats-text {
         margin-left: 15px;
+        font-size: 1.15em;
     }
 
     .beats-title {
-        font-size: 1.5em;
+        font-size: 1.25em;
+    }
+
+    p {
+        font-size: 1em;
+        margin-bottom: 0px;
     }
 }

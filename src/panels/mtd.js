@@ -45,7 +45,7 @@ var MTDPanel = React.createClass({
             </li>;
         }.bind(this));
 
-        return <div className="panel">
+        return <div className="panel mtd-panel">
             <div className="panel-heading">
                 <h2>MTD Bus Times</h2>
             </div>

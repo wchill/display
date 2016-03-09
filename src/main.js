@@ -7,6 +7,7 @@ var BeatsPanel = require('./panels/beats');
 var MTDPanel = require('./panels/mtd');
 var MeetingTimesPanel = require('./panels/meeting-times');
 var SponsorsPanel = require('./panels/sponsors');
+var EventsPanel = require('./panels/events');
 
 /**
  * Top-level dashboard component.
@@ -17,6 +18,7 @@ var Dashboard = React.createClass({
             <Header />
             <div className="row row-primary">
                 <SlidesPanel />
+                <EventsPanel />
                 <MeetingTimesPanel />
             </div>
             <div className="row row-secondary">

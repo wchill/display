@@ -25,6 +25,13 @@ var BeatsPanel = React.createClass({
         setInterval(this.updateNowPlaying, 1000);
     },
 
+    getTimeString: function(time) {
+        time = Math.round(time);
+        var mins = Math.floor(time / 60);
+        var secs = time % 60;
+        return mins + ':' + secs;
+    },
+
     render: function() {
         var nowPlaying = this.state.nowPlaying;
 
@@ -37,6 +44,11 @@ var BeatsPanel = React.createClass({
                 artUrl += 'static/default-album-art.jpg';
             }
 
+            var elapsed = nowPlaying.player_status.current_time / 1000;
+            var elapsedStr = this.getTimeString(elapsed);
+            var duration = nowPlaying.media.length;
+            var durationStr = this.getTimeString(duration);
+
             body = <div className="panel-body beats-panel-body">
                 <img src={artUrl} />
                 <div className="beats-text">
@@ -45,9 +57,8 @@ var BeatsPanel = React.createClass({
                     </div>
                     <div>{nowPlaying.media.album}</div>
                     <div>{nowPlaying.media.artist}</div>
-                    <div>Time: {nowPlaying.player_status.current_time / 1000}</div>
-                    <div>Duration: {nowPlaying.media.length}</div>
-                    <p>https://www-s.acm.illinois.edu/beats/1104/</p>
+                    <p>{elapsedStr} / {durationStr}</p>
+                    <p>acm.illinois.edu/beats/1104/</p>
                 </div>
             </div>;
         }
