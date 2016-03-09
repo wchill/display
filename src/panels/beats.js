@@ -29,7 +29,7 @@ var BeatsPanel = React.createClass({
         time = Math.round(time);
         var mins = Math.floor(time / 60);
         var secs = time % 60;
-        return mins + ':' + secs;
+        return mins + ':' + ('0' + secs).substr(-2);
     },
 
     render: function() {
