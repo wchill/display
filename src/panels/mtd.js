@@ -38,22 +38,26 @@ var MTDPanel = React.createClass({
     },
 
     render: function() {
-        var items = this.state.departures.map(function(departure) {
+        var departures = this.state.departures.slice(0, 5);
+        var items = departures.map(function(departure) {
+            var headsign = departure.headsign.split(' ');
+            var num = headsign[0];
+            var name = headsign.slice(1).join(' ');
             var mins = departure.expected_mins;
-            return <li key={departure.trip.trip_id}>
-                {this.getMinsText(mins)} - {departure.headsign}
-            </li>;
+            return <div className="bus-item" key={departure.trip.trip_id}>
+                <div className="bus-name">
+                    <strong>{num}</strong> <small>{name}</small>
+                </div>
+                <div className="bus-mins">{this.getMinsText(mins)}</div>
+            </div>;
         }.bind(this));
 
         return <div className="panel mtd-panel">
             <div className="panel-heading">
-                <h2>MTD Bus Times</h2>
+                <h2>MTD - Goodwin &amp; Main</h2>
             </div>
             <div className="panel-body">
-                <p>Goodwin &amp; Main</p>
-                <ul>
-                    {items}
-                </ul>
+                {items}
             </div>
         </div>;
     }
