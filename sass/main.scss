@@ -3,6 +3,7 @@
 @import 'panels/meeting-times';
 @import 'panels/mtd';
 @import 'panels/slides';
+@import 'panels/sponsors';
 
 body {
     margin: 0px;
@@ -42,6 +43,7 @@ body {
         padding: 10px;
         background: linear-gradient(#2f86ae, #385461);
         color: white;
+        flex-shrink: 0;
 
         h2 {
             margin-top: 0;

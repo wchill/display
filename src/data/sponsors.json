@@ -2,11 +2,35 @@
     "gold": [
         {
             "name": "Palantir",
-            "logoPath": "img/sponsors/palantir.jpg"
+            "logoPath": "img/sponsors/palantir.png"
+        },
+        {
+            "name": "Union Pacific",
+            "logoPath": "img/sponsors/union-pacific.png"
         }
     ],
     "silver": [
+        {
+            "name": "Qualtrics",
+            "logoPath": "img/sponsors/qualtrics.png"
+        },
+        {
+            "name": "Wish",
+            "logoPath": "img/sponsors/wish.png"
+        }
     ],
     "bronze": [
+        {
+            "name": "Capital One",
+            "logoPath": "img/sponsors/capital-one.png"
+        },
+        {
+            "name": "Think Big",
+            "logoPath": "http://placehold.it/200x100"
+        },
+        {
+            "name": "Google",
+            "logoPath": "img/sponsors/google.png"
+        }
     ]
 }
