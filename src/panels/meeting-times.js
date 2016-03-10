@@ -14,7 +14,7 @@ var MeetingTimesPanel = React.createClass({
                 {meeting.name} - {location} - {time}
             </li>;
         });
-        return <div className="panel meeting-times-panel">
+        return <div className="panel panel-fill meeting-times-panel">
             <div className="panel-heading">
                 <h2>Meeting Times</h2>
             </div>

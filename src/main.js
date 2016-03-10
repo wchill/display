@@ -18,7 +18,6 @@ var Dashboard = React.createClass({
             <Header />
             <div className="row row-primary">
                 <SlidesPanel />
-                <EventsPanel />
                 <MeetingTimesPanel />
             </div>
             <div className="row row-secondary">
