@@ -1,6 +1,7 @@
 var React = require('react');
 
 var ClockPanel = require('./panels/clock');
+var WeatherPanel = require('./panels/weather');
 
 var Header = React.createClass({
     render: function() {
@@ -14,6 +15,7 @@ var Header = React.createClass({
                 </div>
             </div>
             <div className="header-right">
+                <WeatherPanel />
                 <ClockPanel />
             </div>
         </div>;
