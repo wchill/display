@@ -9,6 +9,10 @@
         "type": "git",
         "url": "https://github.com/acm-uiuc/display.git"
     },
+    "window": {
+        "fullscreen": true,
+        "frame": false
+    },
     "main": "index.html",
     "dependencies": {
         "async": "1.5.x",
