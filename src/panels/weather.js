@@ -48,7 +48,7 @@ var WeatherPanel = React.createClass({
                 className="weather-icon"
                 width="100"
                 height="100" />
-            <span className="weather-temp-text">
+            <span className="weather-temp">
                 {temp + '\u00b0F'}
             </span>
             <div className="weather-summary">

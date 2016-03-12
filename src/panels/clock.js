@@ -21,8 +21,12 @@ var ClockPanel = React.createClass({
 
     render: function() {
         return <div className="clock-panel">
-            <h1>{this.state.date.format('h:mm A')}</h1>
-            <h2>{this.state.date.format('dddd, MMMM D, YYYY')}</h2>
+            <div className="clock-time">
+                {this.state.date.format('h:mm A')}
+            </div>
+            <div className="clock-date">
+                {this.state.date.format('dddd, MMMM D, YYYY')}
+            </div>
         </div>;
     }
 });
