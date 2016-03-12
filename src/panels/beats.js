@@ -40,6 +40,22 @@ var BeatsPanel = React.createClass({
         return mins + ':' + ('0' + secs).substr(-2);
     },
 
+    getArtUrl: function() {
+        var nowPlaying = this.state.nowPlaying;
+        if (!nowPlaying) {
+            return baseUrl + 'static/default-album-art.jpg';
+        }
+
+        var artUri = nowPlaying.media.art_uri;
+        if (this.state.artError || !artUri) {
+            return baseUrl + 'static/default-album-art.jpg';
+        } else if (/https?:\/\//.test(artUri)) {
+            return artUri;
+        } else {
+            return baseUrl + nowPlaying.media.art_uri;
+        }
+    },
+
     handleError: function() {
         this.setState({artError: true});
     },
@@ -49,20 +65,13 @@ var BeatsPanel = React.createClass({
 
         var body = null;
         if (nowPlaying) {
-            var artUrl = baseUrl;
-            if (!this.state.artError && nowPlaying.media.art_uri) {
-                artUrl += nowPlaying.media.art_uri;
-            } else {
-                artUrl += 'static/default-album-art.jpg';
-            }
-
             var elapsed = nowPlaying.player_status.current_time / 1000;
             var elapsedStr = this.getTimeString(elapsed);
             var duration = nowPlaying.media.length;
             var durationStr = this.getTimeString(duration);
 
             body = <div className="panel-body beats-panel-body">
-                <img src={artUrl} onError={this.handleError} />
+                <img src={this.getArtUrl()} onError={this.handleError} />
                 <div className="beats-text">
                     <div className="beats-title">
                         {nowPlaying.media.title}
