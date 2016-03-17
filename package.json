@@ -11,7 +11,7 @@
     },
     "window": {
         "fullscreen": true,
-        "frame": false
+        "toolbar": false
     },
     "main": "index.html",
     "dependencies": {
