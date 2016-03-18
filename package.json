@@ -13,7 +13,7 @@
         "fullscreen": true,
         "toolbar": false
     },
-    "main": "index.html",
+    "main": "main.js",
     "dependencies": {
         "async": "1.5.x",
         "babel-preset-react": "6.5.x",
