@@ -1,5 +1,9 @@
 [
     {
+        "owner": "Kevin Wang",
+        "imgPath": "img/ads/vim-tutorial.gif"
+    },
+    {
         "owner": "Abhishek Modi",
         "imgPath": "img/ads/sigops-vrst.png"
     },
