@@ -1,5 +1,9 @@
 [
     {
+        "owner": "Pranay Prakash",
+        "imgPath": "img/ads/acm-lan-party.png"
+    },
+    {
         "owner": "Abhishek Modi",
         "imgPath": "img/ads/sigops-vrst.png"
     },
