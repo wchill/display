@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    :first-child {
+    > .panel:first-child {
         margin-left: 0;
     }
 }
