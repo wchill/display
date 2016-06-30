@@ -2,7 +2,7 @@ var React = require('react');
 var $ = require('jquery');
 var ICAL = require('ical.js');
 var moment = require('moment');
-var classnames = require('classnames');
+var classNames = require('classnames');
 
 var icalUrl = 'https://www-s.acm.illinois.edu/calendar/feed.ics';
 var EVENTS_INTERVAL_MS = 60 * 1000;
@@ -71,7 +71,7 @@ var EventsPanel = React.createClass({
     },
 
     render: function() {
-        var bodyClass = classnames({
+        var bodyClass = classNames({
             'panel-body': true,
             'events-body-no-events': this.state.events.length == 0
         });

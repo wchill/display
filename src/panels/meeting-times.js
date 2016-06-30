@@ -1,5 +1,5 @@
 var React = require('react');
-var classnames = require('classnames');
+var classNames = require('classnames');
 
 var meetingTimes = require('../data/meeting-times.json');
 
@@ -40,7 +40,7 @@ var MeetingTimesPanel = React.createClass({
 
         var dots = [];
         for (var i = 0; i < meetingTimes.length; i += ROWS_PER_PAGE) {
-            var dotClass = classnames({
+            var dotClass = classNames({
                 dot: true,
                 active: i == index
             });

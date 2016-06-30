@@ -1,7 +1,7 @@
 var React = require('react');
 var $ = require('jquery');
 var async = require('async');
-var classnames = require('classnames');
+var classNames = require('classnames');
 
 var secrets = require('../secrets');
 
@@ -59,7 +59,7 @@ var MTDPanel = React.createClass({
             body = <p>No upcoming departures</p>;
         }
 
-        var bodyClass = classnames({
+        var bodyClass = classNames({
             'panel-body': true,
             'mtd-body-no-departures': departures.length == 0
         });
