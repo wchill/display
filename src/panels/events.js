@@ -29,6 +29,9 @@ var EventsPanel = React.createClass({
                 .filter(function(vevent) {
                     return vevent.endDate.compare(now) >= 1;
                 })
+                .sort(function(a, b) {
+                    return a.startDate.compare(b.startDate);
+                })
                 .slice(0, 5);
             this.setState({events: events});
         }.bind(this));
@@ -39,21 +42,34 @@ var EventsPanel = React.createClass({
         setInterval(this.updateEvents, EVENTS_INTERVAL_MS);
     },
 
-    formatDate: function(date, isEndDate) {
+    formatDate: function(date, isEndDate, showDate) {
         var jsDate = date.toJSDate();
-        if (isEndDate) {
+        if (isEndDate && date.isDate) {
             jsDate.setDate(jsDate.getDate() - 1);
         }
-        return moment(jsDate).format('MMM D' + (date.isDate ? '' : ' h:mm A'));
+        var formatComponents = [];
+        if (showDate) {
+            formatComponents.push('MMM D');
+        }
+        if (!date.isDate) {
+            formatComponents.push('h:mm A');
+        }
+        return moment(jsDate).format(formatComponents.join(' '));
+    },
+
+    isSingleDay: function(event) {
+        return event.startDate.isDate && event.duration.compare(ONE_DAY) === 0;
     },
 
     formatEventTime: function(event) {
-        var startDateStr = this.formatDate(event.startDate);
-        var endDateStr = this.formatDate(event.endDate, true);
-        if (event.startDate.isDate && event.duration.compare(ONE_DAY) === 0) {
+        var startDateStr = this.formatDate(event.startDate, false, true);
+        if (this.isSingleDay(event)) {
             return startDateStr;
         }
-        return startDateStr + ' \u2013 ' + endDateStr;
+        var isSameDay = event.startDate.compareDateOnlyTz(
+            event.endDate, ICAL.Timezone.localTimezone);
+        var endDateStr = this.formatDate(event.endDate, true, isSameDay);
+        return startDateStr +  ' \u2013 ' + endDateStr;
     },
 
     getEvents: function() {
