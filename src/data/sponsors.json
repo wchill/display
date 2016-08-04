@@ -15,19 +15,19 @@
         "logoPath": "img/sponsors/qualtrics.png"
     },
     {
-        "name": "Wish",
+        "name": "Sunrise Futures",
         "level": "Silver",
-        "logoPath": "img/sponsors/wish.png"
+        "logoPath": "img/sponsors/sunrise-futures.jpg"
+    },
+    {
+        "name": "Fitbit",
+        "level": "Silver",
+        "logoPath": "img/sponsors/fitbit.png"
     },
     {
         "name": "Capital One",
         "level": "Bronze",
         "logoPath": "img/sponsors/capital-one.png"
-    },
-    {
-        "name": "ThinkB1G",
-        "level": "Bronze",
-        "logoPath": "img/sponsors/thinkb1g.png"
     },
     {
         "name": "Google",
