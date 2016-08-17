@@ -1,33 +1,33 @@
 [
     {
         "name": "ADSA",
-        "location": "1104 Siebel",
-        "time": "2 PM Sundays"
+        "location": null,
+        "time": null
     },
     {
         "name": "Gamebuilders",
-        "location": "3403 Siebel",
-        "time": "7 PM Tuesdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "GLUG",
-        "location": "0216 Siebel",
-        "time": "8 PM Tuesdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "ICPC",
-        "location": "0218 Siebel",
-        "time": "6 PM Tuesdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "OpenNSM",
-        "location": "0216 Siebel",
-        "time": "6 PM Tuesdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGAI",
-        "location": "1105 Siebel",
-        "time": "1 PM Sundays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGBED",
@@ -41,18 +41,18 @@
     },
     {
         "name": "SIGChi",
-        "location": "1214 Siebel",
-        "time": "5 PM Wednesdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGCo-op",
-        "location": "1106 Siebel",
-        "time": "3 PM Saturdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGDave",
-        "location": "1110 Siebel",
-        "time": "7 PM Tuesdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGGRAPH",
@@ -61,43 +61,43 @@
     },
     {
         "name": "SIGIR",
-        "location": "4403 Siebel",
-        "time": "6 PM Mondays"
-    },
-    {
-        "name": "SIGMobile",
-        "location": "1109 Siebel",
-        "time": "6 PM Mondays"
-    },
-    {
-        "name": "SIGMusic",
-        "location": "1103 Siebel",
-        "time": "8 PM Wednesdays"
-    },
-    {
-        "name": "SIGNature",
         "location": null,
         "time": null
     },
     {
+        "name": "SIGMobile",
+        "location": null,
+        "time": null
+    },
+    {
+        "name": "SIGMusic",
+        "location": null,
+        "time": null
+    },
+    {
+        "name": "SIGNature",
+        "location": "1106 Siebel",
+        "time": "1 PM Saturdays"
+    },
+    {
         "name": "SIGNeuro",
-        "location": "2102 Siebel",
-        "time": "2 PM Sundays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGOps",
-        "location": "4405 Siebel",
-        "time": "7 PM Mondays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGPLAN",
-        "location": "2407 Siebel",
-        "time": "3 PM Sundays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGPwny",
-        "location": "1214 Siebel",
-        "time": "7 PM Thursdays"
+        "location": null,
+        "time": null
     },
     {
         "name": "SIGSoft",
@@ -106,22 +106,22 @@
     },
     {
         "name": "SIGVRST",
-        "location": "4403 Siebel",
-        "time": "6 PM Mondays"
+        "location": null,
+        "time": null
     },
     {
         "name": "Webmonkeys",
-        "location": "3401 Siebel",
-        "time": "7 PM Mondays"
+        "location": null,
+        "time": null
     },
     {
         "name": "HackIllinois",
-        "location": "Coming Soon",
-        "time": "Spring 2017"
+        "location": null,
+        "time": null
     },
     {
         "name": "Reflections | Projections",
-        "location": "2405 Siebel",
-        "time": "7 PM Mondays"
+        "location": null,
+        "time": null
     }
 ]
