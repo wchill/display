@@ -25,6 +25,11 @@
         "logoPath": "img/sponsors/fitbit.png"
     },
     {
+        "name": "Akuna Capital",
+        "level": "Silver",
+        "logoPath": "img/sponsors/akuna-capital.png"
+    },
+    {
         "name": "Capital One",
         "level": "Bronze",
         "logoPath": "img/sponsors/capital-one.png"
@@ -33,5 +38,10 @@
         "name": "Google",
         "level": "Bronze",
         "logoPath": "img/sponsors/google.png"
+    },
+    {
+        "name": "Allston Trading",
+        "level": "Bronze",
+        "logoPath": "img/sponsors/allston-trading.png"
     }
 ]
