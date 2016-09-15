@@ -46,8 +46,8 @@
     },
     {
         "name": "SIGCo-op",
-        "location": null,
-        "time": null
+        "location": "Siebel 1106",
+        "time": "Saturdays 3 PM"
     },
     {
         "name": "SIGDave",
@@ -71,13 +71,13 @@
     },
     {
         "name": "SIGMusic",
-        "location": null,
-        "time": null
+        "location": "Siebel 1105",
+        "time": "Wednesdays 1 PM"
     },
     {
         "name": "SIGNature",
-        "location": "1106 Siebel",
-        "time": "1 PM Saturdays"
+        "location": "Siebel 1106",
+        "time": "Saturdays 1 PM"
     },
     {
         "name": "SIGNeuro",
@@ -86,18 +86,18 @@
     },
     {
         "name": "SIGOps",
-        "location": null,
-        "time": null
+        "location": "Siebel 1109",
+        "time": "Thursdays 6 PM"
     },
     {
         "name": "SIGPLAN",
-        "location": null,
-        "time": null
+        "location": "Siebel 2407",
+        "time": "Sundays 3 PM"
     },
     {
         "name": "SIGPwny",
-        "location": null,
-        "time": null
+        "location": "Siebel 3405",
+        "time": "Thursdays 5 PM"
     },
     {
         "name": "SIGSoft",
@@ -106,13 +106,13 @@
     },
     {
         "name": "SIGVRST",
-        "location": null,
-        "time": null
+        "location": "Siebel 4405",
+        "time": "Thursdays 5 PM"
     },
     {
         "name": "Webmonkeys",
-        "location": null,
-        "time": null
+        "location": "Siebel 1214",
+        "time": "Tuesdays 6 PM"
     },
     {
         "name": "HackIllinois",
