@@ -21,7 +21,7 @@ var WeatherPanel = React.createClass({
     },
 
     updateWeather: function() {
-        var url = ('https://api.forecast.io/forecast/' +
+        var url = ('https://api.darksky.net/forecast/' +
                    secrets.forecastAPIKey + '/40.1140,-88.2244');
         $.get(url, function(data) {
             this.setState({weather: data});
