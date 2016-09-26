@@ -4,6 +4,8 @@ var ICAL = require('ical.js');
 var moment = require('moment');
 var classNames = require('classnames');
 
+var time = require('../utils/time');
+
 var icalUrl = 'https://www-s.acm.illinois.edu/calendar/feed.ics';
 var EVENTS_INTERVAL_MS = 60 * 1000;
 var ONE_DAY = new ICAL.Duration({days: 1});
@@ -47,14 +49,14 @@ var EventsPanel = React.createClass({
         if (isEndDate && date.isDate) {
             jsDate.setDate(jsDate.getDate() - 1);
         }
-        var formatComponents = [];
+        var dateComponents = [];
         if (showDate) {
-            formatComponents.push('MMM D');
+            dateComponents.push(moment(jsDate).format('MMM D'));
         }
         if (!date.isDate) {
-            formatComponents.push('h:mm A');
+            dateComponents.push(time.formatTime(jsDate));
         }
-        return moment(jsDate).format(formatComponents.join(' '));
+        return dateComponents.join(' ');
     },
 
     isSingleDay: function(event) {
